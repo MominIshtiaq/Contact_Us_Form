@@ -6,14 +6,6 @@ const sendMail = () => {
     To: "momin989ishtiaq@gmail.com",
     From: document.getElementById("email").value,
     Subject: "Testing Contact Us Form",
-    Body:
-      "Name: " +
-      document.getElementById("name").value +
-      "<br> Email: " +
-      document.getElementById("email").value +
-      "<br> PhoneNo: " +
-      document.getElementById("phone").value +
-      "<br> Message: " +
-      document.getElementById("message").value,
-  }).then((message) => alert("Message Sent successfully"));
+    Body: "Testing by sending fake message",
+  }).then((message) => alert("Message sent successfully"));
 };
