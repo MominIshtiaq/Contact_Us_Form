@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #517fe2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  width: 40%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #e4e4e4;
+  padding: 1rem 2rem;
+  border-radius: 0.67rem;
+}
+
+.contact h3 {
+  text-align: center;
+  font-size: 1.67rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.67rem 1.67rem;
+  margin-bottom: 0.67rem;
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+}
+
+.contact textarea {
+  resize: none;
+}
+
+.contact button {
+  padding: 0.67rem;
+  background: #517fe2;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.67rem;
+}
+
+.contact button:hover {
+  filter: brightness(0.8);
+}

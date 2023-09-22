@@ -8,15 +8,29 @@
   </head>
   <body>
     <div class="container">
-      <form class="contact">
+      <form class="contact" onsubmit="sendMail(); reset(); return false">
         <h3>Communicate with Us</h3>
-        <input type="text" id="name" placeholder="Enter Name" required />
-        <input type="email" id="email" placeholder="Enter Email" required />
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter Name"
+          required
+          autocomplete="off"
+          autofocus
+        />
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter Email"
+          required
+          autocomplete="off"
+        />
         <input
           type="password"
           id="password"
           placeholder="Enter Password"
           required
+          autocomplete="off"
         />
         <textarea
           id="message"
