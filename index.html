@@ -8,13 +8,12 @@
   </head>
   <body>
     <div class="container">
-      <form class="contact" onsubmit="sendMail(); reset(); return false;">
+      <form class="contact">
         <h3>Communicate with Us</h3>
         <input
           type="text"
           id="name"
           placeholder="Enter Name"
-          required
           autocomplete="off"
           autofocus
         />
@@ -22,14 +21,12 @@
           type="email"
           id="email"
           placeholder="Enter Email"
-          required
           autocomplete="off"
         />
         <input
           type="tel"
           id="phone"
           placeholder="Enter Phone No."
-          required
           autocomplete="off"
         />
         <textarea
@@ -37,10 +34,10 @@
           rows="4"
           placeholder="Enter your message"
         ></textarea>
-        <button type="submit">Send</button>
+        <button type="submit" onclick="sendMail()">Send</button>
       </form>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.jscon"></script>
     <script src="index.js"></script>
   </body>
 </html>

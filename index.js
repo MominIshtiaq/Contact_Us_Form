@@ -1,11 +1,11 @@
-const sendMail = () => {
+function sendMail() {
   Email.send({
-    Host: "smtp.gmail.com",
+    Host: "smtp.elasticemail.com",
     Username: "momin989ishtiaq@gmail.com",
-    Password: "0333Momin0333",
+    Password: "CD2D1D9ACBECD71C2C981CA6A7A8826E29C1",
     To: "momin989ishtiaq@gmail.com",
-    From: document.getElementById("email").value,
-    Subject: "Testing Contact Us Form",
-    Body: "Testing by sending fake message",
-  }).then((message) => alert("Message sent successfully"));
-};
+    From: "momin989ishtiaq@gmail.com",
+    Subject: "This is the subject",
+    Body: "And this is the body",
+  }).then((message) => alert(message));
+}
