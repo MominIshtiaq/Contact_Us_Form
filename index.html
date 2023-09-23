@@ -8,59 +8,38 @@
   </head>
   <body>
     <div class="container">
-      <form class="contact" onsubmit="sendMail(); reset(); return false;">
+      <form
+        class="contact"
+        action="https://formsubmit.co/momin989ishtiaq@gmail.com"
+        method="POST"
+      >
         <h3>Communicate with Us</h3>
         <input
           type="text"
-          id="name"
+          name="name"
           placeholder="Enter Name"
           autocomplete="off"
           autofocus
         />
         <input
           type="email"
-          id="email"
+          name="email"
           placeholder="Enter Email"
           autocomplete="off"
         />
         <input
           type="tel"
-          id="phone"
+          name="phone"
           placeholder="Enter Phone No."
           autocomplete="off"
         />
         <textarea
-          id="message"
+          name="message"
           rows="4"
           placeholder="Enter your message"
         ></textarea>
         <button type="submit">Send</button>
       </form>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendMail() {
-        Email.send({
-          Host: "smtp.elasticemail.com",
-          Username: "momin989ishtiaq@gmail.com",
-          Password: "CD2D1D9ACBECD71C2C981CA6A7A8826E29C1",
-          To: "momin989ishtiaq@gmail.com",
-          From: document.getElementById("email").value,
-          Subject: "Contact Enquiry",
-          Body:
-            "Name: " +
-            document.getElementById("name").value +
-            "<br> Email: " +
-            document.getElementById("email").value +
-            "<br> Phone No: " +
-            document.getElementById("phone").value +
-            "<br> Message: " +
-            document.getElementById("message").value,
-        })
-          .then((message) => alert("hello world"))
-          .catch((err) => console.log(err));
-      }
-    </script>
   </body>
 </html>
-<!-- CD2D1D9ACBECD71C2C981CA6A7A8826E29C1 -->
